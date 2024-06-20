@@ -1154,7 +1154,7 @@ func (parser *Parser) getTypeSchema(typeName string, file *ast.File, ref bool) (
 
 	typeSpecDef := parser.packages.FindTypeSpec(typeName, file)
 	if typeSpecDef == nil {
-		return nil, fmt.Errorf("cannot find type definition: %s", typeName)
+		return nil, fmt.Errorf("cannot find type definition11111111: %s", typeName)
 	}
 
 	if override, ok := parser.Overrides[typeSpecDef.FullPath()]; ok {
